@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=5&page=1
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en Javascript",
+    "description": "trabajo freelance",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/62846b748d67d626ed1414a3
+
+###
+DELETE http://localhost:3000/api/tasks/62846c629c736556612ab200
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/62846b748d67d626ed1414a4
+Content-Type: application/json
+
+{
+    "title": "Crear un sitio web en Wix"
+}
